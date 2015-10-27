@@ -1,9 +1,11 @@
 import java.io.IOException;
+
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Created by Сашка on 26.10.2015.
+ * Created by РЎР°С€РєР° on 26.10.2015.
  */
 public class Ex2 {
     static float a, b, c;
@@ -12,22 +14,22 @@ public class Ex2 {
 
     public static void main(String args[]) throws IOException {
         try {
-            System.out.println("Розв'язок квадратного рівняння");
+            System.out.println("Р РѕР·РІ'СЏР·РѕРє РєРІР°РґСЂР°С‚РЅРѕРіРѕ СЂС–РІРЅСЏРЅРЅСЏ");
             Scanner s = new Scanner(System.in);
-            System.out.print("Введіть значення a -> ");
+            System.out.print("Р’РІРµРґС–С‚СЊ Р·РЅР°С‡РµРЅРЅСЏ a -> ");
             a = s.nextFloat();
-            System.out.print("Введіть значення b -> ");
+            System.out.print("Р’РІРµРґС–С‚СЊ Р·РЅР°С‡РµРЅРЅСЏ b -> ");
             b = s.nextFloat();
-            System.out.print("Введіть значення c -> ");
+            System.out.print("Р’РІРµРґС–С‚СЊ Р·РЅР°С‡РµРЅРЅСЏ c -> ");
             c = s.nextFloat();
             System.out.println("a = " + a + " b = " + b + " c = " + c);
 
             d = (b * b) - (4 * a * c);
 
-            System.out.println("Дискримінант = " + d);
+            System.out.println("Р”РёСЃРєСЂРёРјС–РЅР°РЅС‚ = " + d);
 
             if (d < 0)
-                System.out.print("Розв'язку немає");
+                System.out.print("Р РѕР·РІ'СЏР·РєСѓ РЅРµРјР°С”");
             else if (d == 0) {
                 x1 = (-b) / (2 * a);
                 System.out.println("x = " + x1);
@@ -40,7 +42,7 @@ public class Ex2 {
                     System.out.println("x1 =  " + x1 + "  x2 = " + x2);
             }
         } catch (InputMismatchException e) {
-            System.out.println("Помилка вводу");
+            System.out.println("РџРѕРјРёР»РєР° РІРІРѕРґСѓ");
         }
     }
 }
